@@ -11,9 +11,9 @@ terraform {
 provider "vcd" {
   user                 = var.cd_username
   password             = var.cd_password
-  org                  = var.cd_vdcadres
+  org                  = var.org_name
   sysorg               = "System"
-  url                  = 
+  url                  = var.cd_vdcadres
   max_retry_timeout    = "90"
   allow_unverified_ssl = "true"
   vdc                  = var.vdc_name
