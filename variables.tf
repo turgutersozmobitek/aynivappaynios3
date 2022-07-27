@@ -1,112 +1,121 @@
 # vCloud Director Organization Variables
+
 variable "org_name" {
     type        = string
-    description = "Organization Name"
+    description = "Organizasyon İsmi:"
 }
 
 variable "vdc_name" {
     type        = string
-    description = "VM Oluşturulacak  Organizasyona Ait VDC Adını giriniz."
+    description = "VDC Adı:"
 }
 
 variable "vapp_name" {
     type        = string
-    description = "vM için kullanılacak vAPP adını giriniz*"
+    description = "VAPP Adı:"
 }
 
 variable "org_network_name" {
     type        = string
-    description = "vApp için kullanılacak Organizasyon Network adını yazınız."
+    description = "Network Adı:"
 }
 
-variable "vm_name" {
-    type        = string
-    description = "Oluşturulacak vM adını giriniz."
-}
 
 variable "catalog_name" {
     type        = string
     default     = "App"
-    description = "Kullanılacak imajın olduğu Catalog ismini giriniz."
+    description = "Catalog:"
 }
 
 variable "template_name" {
     type        = string
-    description = "Catalog içinde kullanılacak Template adını giriniz Örn: Windows2019 gibi"
+    description = "OS:"
 }
 
-variable "vm_memory" {
+variable "vm_name" {
     type        = string
-    description = "Sunucuya verilecek Memory miktarını MB cinsinden yazınız. 1GB = 1024"
+    description = "Sunucu Adı:"
 }
 
 variable "vm_cpu" {
     type        = string
-    description = "Sunucuya verilecek CPU adedini giriniz."
+    description = "CPU:"
 }
 
 variable "vm_cpu_core" {
     type        = string
-    description = "Sunucuya verilecek CPU Core adedini giriniz."
+    description = "CPU Core:"
 }
 
-
-variable "vm_ip" {
+variable "vm_memory" {
     type        = string
-    description = "Sunucuya verilecek IP adresini giriniz."
+    description = "RAM:"
 }
+
 
 variable "vm_disk_size" {
     type        = string
-    description = "Disk Boyutunu MB cinsinden giriniz. 1GB = 1024"
+    description = "Disk:"
 }
+
+variable "vm_ip" {
+    type        = string
+    description = "IP Adresi:"
+}
+
 
 variable "vm2_name" {
     type        = string
-    description = "2.Sunucunun Adını giriniz."
+    description = "2.Sunucu Adı:"
 }
-variable "vm2_memory"{
-    type        = string
-    description = "2.Sunucunun Bellek (Ram) Miktarını Giriniz 1GB = 1024"   
-}
+
 variable "vm2_cpu"{
     type        = string
-    description = "2.Sunucunun Cpu Adedini giriniz."    
+    description = "2.Sunucu CPU:"    
 }
 variable "vm2_cpu_core"{
     type        = string
-    description = "2.Sunucunun Cpu Core  adedini giriniz."  
+    description = "2.Sunucu CPU Core:"  
 }
+
+variable "vm2_memory"{
+    type        = string
+    description = "2.Sunucu RAM:"   
+}
+
 variable "vm2_disk_size"{
     type        = string
-    description = "2.Sunucunun Disk Boyutunu MB cinsinden giriniz. 1GB = 1024"  
+    description = "2.Sunucu Disk:"  
 }
 variable "vm2_ip"{
     type        = string
-    description = "2.Sunucuya atanacak IP adresini giriniz."    
+    description = "2.Sunucu IP Adresi"    
 }
 
 variable "vm3_name" {
     type        = string
-    description = "3.Sunucunun Adını giriniz."
+    description = "3.Sunucu Adı:"
 }
-variable "vm3_memory"{
-    type        = string
-    description = "3.Sunucunun Bellek (Ram) Miktarını Giriniz 1GB = 1024"   
-}
+
 variable "vm3_cpu"{
     type        = string
-    description = "3.Sunucunun Cpu Adedini giriniz."    
+    description = "3.Sunucu CPU:"    
 }
 variable "vm3_cpu_core"{
     type        = string
-    description = "3.Sunucunun Cpu Core  adedini giriniz."  
+    description = "3.Sunucu CPU Core:"  
 }
+
+variable "vm3_memory"{
+    type        = string
+    description = "3.Sunucu RAM:"   
+}
+
 variable "vm3_disk_size"{
     type        = string
-    description = "3.Sunucunun Disk Boyutunu MB cinsinden giriniz. 1GB = 1024"  
+    description = "3.Sunucu Disk:"  
 }
 variable "vm3_ip"{
     type        = string
-    description = "3.Sunucuya atanacak IP adresini giriniz."    
+    description = "3.Sunucu IP Adresi"    
 }
