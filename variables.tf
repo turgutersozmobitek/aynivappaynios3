@@ -1,48 +1,35 @@
-# vCloud Director Organization Variables
 variable "cd_username" {
     type        = string
-    description = "vCenter UserName"
+    description = "vCD UserName"
 }
 variable "cd_password" {
     type        = string
-    description = "vCenter Password"
+    description = "vCD Password"
 }
 
 variable "cd_vdcadres" {
     type        = string
-    description = "vCenter URL"
+    description = "vCD Adresi"
 }
 
 variable "org_name" {
     type        = string
     description = "Organizasyon İsmi:"
+    default     = "list"
 }
 
 variable "vdc_name" {
     type        = string
     description = "VDC Adı:"
+    default     = "list"
+
 }
+
 
 variable "vapp_name" {
     type        = string
     description = "VAPP Adı:"
-}
-
-variable "org_network_name" {
-    type        = string
-    description = "Network Adı:"
-}
-
-
-variable "catalog_name" {
-    type        = string
-    default     = "App"
-    description = "Catalog:"
-}
-
-variable "template_name" {
-    type        = string
-    description = "OS:"
+    default     = "list"
 }
 
 variable "vm_name" {
@@ -53,23 +40,54 @@ variable "vm_name" {
 variable "vm_cpu" {
     type        = string
     description = "CPU:"
+    default     = "list"
 }
 
 variable "vm_cpu_core" {
     type        = string
     description = "CPU Core:"
+    default     = "list"
 }
+
 
 variable "vm_memory" {
     type        = string
-    description = "RAM:"
+    description = "Memory:"
+    default     = "list"
 }
-
 
 variable "vm_disk_size" {
     type        = string
     description = "Disk:"
+    default     = "list"
 }
+
+
+variable "org_network_name" {
+    type        = string
+    description = "Network Adı:"
+    default     = "list"
+}
+
+
+variable "vm_description" {
+    type        = string
+    description = "MANAGED/UNMANAGED:"
+    default     = "list"
+}    
+
+variable "catalog_name" {
+    type        = string
+    description = "Catalog:"
+    default     = "list"
+}
+
+variable "template_name" {
+  type        = string
+  description = "OS:"
+  default     = "list"
+}
+
 
 variable "vm_ip" {
     type        = string
@@ -82,53 +100,82 @@ variable "vm2_name" {
     description = "2.Sunucu Adı:"
 }
 
-variable "vm2_cpu"{
+variable "vm2_cpu" {
     type        = string
-    description = "2.Sunucu CPU:"    
-}
-variable "vm2_cpu_core"{
-    type        = string
-    description = "2.Sunucu CPU Core:"  
+    description = "CPU:"
+    default     = "list"
 }
 
-variable "vm2_memory"{
+variable "vm2_cpu_core" {
     type        = string
-    description = "2.Sunucu RAM:"   
+    description = "CPU Core:"
+    default     = "list"
 }
 
-variable "vm2_disk_size"{
+
+variable "vm2_memory" {
     type        = string
-    description = "2.Sunucu Disk:"  
+    description = "Memory:"
+    default     = "list"
 }
-variable "vm2_ip"{
+
+variable "vm2_disk_size" {
     type        = string
-    description = "2.Sunucu IP Adresi"    
+    description = "Disk:"
+    default     = "list"
 }
+
+variable "vm2_description" {
+    type        = string
+    description = "MANAGED/UNMANAGED:"
+    default     = "list"
+}    
+
+variable "vm2_ip" {
+    type        = string
+    description = "IP Adresi:"
+}
+
+
 
 variable "vm3_name" {
     type        = string
     description = "3.Sunucu Adı:"
 }
 
-variable "vm3_cpu"{
+variable "vm3_cpu" {
     type        = string
-    description = "3.Sunucu CPU:"    
-}
-variable "vm3_cpu_core"{
-    type        = string
-    description = "3.Sunucu CPU Core:"  
+    description = "CPU:"
+    default     = "list"
 }
 
-variable "vm3_memory"{
+variable "vm3_cpu_core" {
     type        = string
-    description = "3.Sunucu RAM:"   
+    description = "CPU Core:"
+    default     = "list"
 }
 
-variable "vm3_disk_size"{
+
+variable "vm3_memory" {
     type        = string
-    description = "3.Sunucu Disk:"  
+    description = "Memory:"
+    default     = "list"
 }
-variable "vm3_ip"{
+
+variable "vm3_disk_size" {
     type        = string
-    description = "3.Sunucu IP Adresi"    
+    description = "Disk:"
+    default     = "list"
 }
+
+variable "vm3_description" {
+    type        = string
+    description = "MANAGED/UNMANAGED:"
+    default     = "list"
+}    
+
+variable "vm3_ip" {
+    type        = string
+    description = "IP Adresi:"
+}
+
