@@ -30,12 +30,6 @@ resource "vcd_vapp_vm" "web1" {
   }
 
 
-
-  guest_properties = {
-    "guest.hostname"   = "my-host"
-    "another.var.name" = "var-value"
-  }
-
   network {
     type               = "org"
     name               = var.org_network_name
@@ -74,12 +68,6 @@ resource "vcd_vapp_vm" "web2" {
   }
 
 
-
-  guest_properties = {
-    "guest.hostname"   = "my-host"
-    "another.var.name" = "var-value"
-  }
-
   network {
     type               = "org"
     name               = var.org_network_name
@@ -117,11 +105,6 @@ resource "vcd_vapp_vm" "web3" {
   }
 
 
-
-  guest_properties = {
-    "guest.hostname"   = "my-host"
-    "another.var.name" = "var-value"
-  }
 
   network {
     type               = "org"
